@@ -44,8 +44,8 @@ sudo nano /etc/apache2/sites-available/YOUR_WEBSITE_NAME.conf
     ServerName THE_URL_WITH_THE_SUBDOMAIN
     DocumentRoot PATH_FOR_THE_WEBSITE_FILES
 
-    ErrorLog ${APACHE_LOG_DIR}/themultisystem_error.log
-    CustomLog ${APACHE_LOG_DIR}/themultisystem_access.log combined
+    ErrorLog ${APACHE_LOG_DIR}/WEBSITE-NAME_error.log
+    CustomLog ${APACHE_LOG_DIR}/WEBSITE-NAME_access.log combined
 
     <Directory PATH_FOR_THE_WEBSITE_FILES>
         Options Indexes FollowSymLinks
@@ -54,7 +54,7 @@ sudo nano /etc/apache2/sites-available/YOUR_WEBSITE_NAME.conf
     </Directory>
 </VirtualHost>
 ```
-- replcae PATH_FOR_THE_WEBSITE_FILES with the path of your website's files, the WANTED_PORT for the port you want the system to use and lastly the "example@mail.com" with the managers mail.
+- replcae PATH_FOR_THE_WEBSITE_FILES with the path of your website's files, WEBSITE-NAME with the name of your website the WANTED_PORT for the port you want the system to use and lastly the "example@mail.com" with the managers mail.
 - now, enable the configs file via the following command:
 ```
 sudo a2enconf YOUR_WEBSITE_NAME.conf
