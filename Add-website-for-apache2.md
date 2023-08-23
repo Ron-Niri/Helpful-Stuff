@@ -82,5 +82,4 @@ run the following commands to reload and restart the apache2 server to apply cha
 ```
 sudo service apache2 reload
 sudo service apache2 restart
-
 ```
