@@ -14,7 +14,7 @@ nano sitename-handler.conf
 - in the file put:
 ```
 <VirtualHost *:80>
-    ServerName themultisystem.rontech.net
+    ServerName THE_URL_WITH_THE_SUBDOMAIN
     DocumentRoot PATH_FOR_THE_WEBSITE_FILES
 
     ProxyPass / http://127.0.0.1:YOUR_PORT/
@@ -27,7 +27,7 @@ nano sitename-handler.conf
     </Directory>
 </VirtualHost>
 ```
-- change "YOUR_PORT" to the desire port and change PATH_FOR_THE_WEBSITE_FILES for the path of your website's files.
+- change "YOUR_PORT" to the desire port, the THE_URL_WITH_THE_SUBDOMAIN to your domain with the subdomain and change PATH_FOR_THE_WEBSITE_FILES for the path of your website's files.
 - now press the following keys to save and exit:
 ```
   CTRL + O, ENTER, CTRL + X
