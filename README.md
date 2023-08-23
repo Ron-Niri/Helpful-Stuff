@@ -1,4 +1,4 @@
-# Useful computer trickes
+# Useful stuff
 
 ## Windows Related
 
