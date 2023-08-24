@@ -57,8 +57,8 @@ sudo nano /etc/apache2/sites-available/YOUR_WEBSITE_NAME.conf
 - replcae PATH_FOR_THE_WEBSITE_FILES with the path of your website's files, WEBSITE-NAME with the name of your website the WANTED_PORT for the port you want the system to use and lastly the "example@mail.com" with the managers mail.
 - now, enable the configs file via the following command:
 ```
-sudo a2enconf YOUR_WEBSITE_NAME.conf
-sudo a2enconf sitename-handler.conf
+sudo a2ensite YOUR_WEBSITE_NAME.conf
+sudo a2ensite sitename-handler.conf
 sudo service apache2 reload
 sudo service apache2 restart
 ```
