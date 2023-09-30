@@ -12,6 +12,7 @@ For example:
   nano 01-staticip.yaml
 
 - in the file write the following. replace any {} with the info needed:
+  ```
   network:
   version: 2
   renderer: networkd
@@ -24,8 +25,9 @@ For example:
           via: {gateway_ip}
       nameservers:
         addresses: [{dns_server_1}, {dns_server_2}]
-
+  ```
   For example:
+  ```
   network:
   version: 2
   renderer: networkd
@@ -38,5 +40,9 @@ For example:
           via: 192.168.0.1
       nameservers:
         addresses: [8.8.8.8, 1.1.1.1]
+  ```
   The netname is mostly ens192.
+
+  - to finish the process, execute the following command.
+```sudo netplan apply```
   
