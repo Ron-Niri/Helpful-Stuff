@@ -34,3 +34,13 @@ connect using the following commands:<br />
 ```pair XX:XX:XX:XX:XX:XX``` (Replace with your headphones' Bluetooth address): Initiates pairing with your headphones.<br />
 ```connect XX:XX:XX:XX:XX:XX ```(Replace with your headphones' Bluetooth address): Connects to your headphones.<br />
 ```exit```: Exit bluetoothctl when you're done.<br />
+
+## oh ya, also set up as audio... 
+run the command ``` pactl list sinks ``` to find the device name. in my case it is "bluez_output.AC_12_2F_9D_84_5D.1" <br /> keep in mind that the Description/media.name/device.alias IS NOT the device name. <br />
+then run the command: ```pactl set-default-sink <Your Device Name> ```
+and then to check that it is set up right do the following command, if the output is the device name you are good to go!
+``` pactl info | grep 'Default Sink' ```
+
+# Possible Problems
+## if the command ```pactl list sinks ``` doesn't work:
+```sudo apt install pulseaudio```
