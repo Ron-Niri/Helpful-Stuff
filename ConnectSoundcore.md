@@ -25,3 +25,12 @@ To enable and start PipeWire, run the following commands:
 systemctl --user --now enable pipewire.socket
 systemctl --user --now enable pipewire.service
 ```
+
+## Finel Step: Connect!
+connect using the following commands:
+```power on```: Turns on the Bluetooth adapter.
+```agent on```: Enables the Bluetooth agent for authentication.
+```scan on```: Starts scanning for nearby Bluetooth devices.
+```pair XX:XX:XX:XX:XX:XX``` (Replace with your headphones' Bluetooth address): Initiates pairing with your headphones.
+```connect XX:XX:XX:XX:XX:XX ```(Replace with your headphones' Bluetooth address): Connects to your headphones.
+```exit```: Exit bluetoothctl when you're done.
